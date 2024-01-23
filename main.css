@@ -1,0 +1,35 @@
+/* * {
+    background-color: black;
+    
+} */
+
+body {
+    background: linear-gradient(rgb(255, 254, 254), rgb(0, 0, 0))
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: rgba(238, 235, 235, 0.719);
+    
+    
+}
+
+a {
+    padding-left: 40%;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}

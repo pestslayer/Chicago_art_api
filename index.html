@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="main.js" defer></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <title>Art Of The Past</title>    
+      <!-- Modal -->
+      <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="info" class="modal-body bg-dark">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <h1 class="p-5 text-black">Art of the Past</h1>
+    <div class="container">
+        <lottie-player id="lottie" src="https://lottie.host/bbef52c7-2c86-4de1-b50f-47ec04989f3e/1tZkOZ3HQk.json" background="##FFFFFF" speed="1"
+         style="width: 300px; height: 300px; margin-left: 40%;" autoplay direction="1" mode="normal"></lottie-player>
+        <div class="p-5">
+            <p class="text-black p-2">I'd like to share some captivating artwork from the past that I recently came across and found intriguing. I hope you enjoy it as much as I did! Click the 
+                image for more info about the artwork.
+            </p>
+        </div>
+        <figure class="gallery__item gallery__item--1 text-dark-grey font-size-large" id="fig1" onclick="displayMadonna()"><p class="p-2">Madonna of the Rosery</p><img  class="shadow" src="img/Madonna1.jpg"></figure>
+        <figure class="gallery__item gallery__item--1 text-light-grey font-size-large" id="fig1" onclick="displayEarrings()"><img class="shadow" src="img/pairofEarrings.jpg"><p class="p-2">Earrings</p></figure>
+        <figure class="gallery__item gallery__item--1 text-white font-size-large" id="fig1" onclick="displayArmlet()"><P class="p-2">Amulet</P> <img class="shadow" src="img/armband.jpg"></figure>
+        <figure class="gallery__item gallery__item--1 text-white font-size-large" id="fig1" onclick="displayFrame()"><img src="img/frame.jpg"><p class="p-2">Carta Gloria</p></figure>
+    </div>
+
+    <footer class="bg-white text-black d-flex flex-direction-row align-items-center justify-content-center">
+        <div class="bg-white text-black">
+            <p class="text-black"> All art is from Art Institute of Chicago </p>
+            <a href="https://www.artic.edu/">Art Institute</a>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
